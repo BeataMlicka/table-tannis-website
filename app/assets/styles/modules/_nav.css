@@ -1,0 +1,61 @@
+.nav {
+    
+    display: flex;
+    padding: 0;
+    justify-content: flex-start;
+    
+    ul {
+        display: none;
+        
+        @mixin atMedium {
+            display: flex;
+            list-style-type: none;
+            flex: auto;
+
+            li {
+                padding: 0.2rem 1rem;
+                flex: auto;
+            }
+        }
+    }
+    
+    &--menu-icon {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 20px;
+                
+        @mixin atMedium {
+            display: none;
+        }
+    }
+    
+    &--menu-stripes {
+        
+        position: absolute;
+        left: 0;
+        width: 22px;
+        height: 3px;
+        background: #ffffff;
+        border-radius: 1px;
+        
+        &--top {
+            top: 0px;
+        }
+        
+        &--middle {
+            top: 6px;
+        }
+        
+        &--bottom {
+            top: 12px;
+        }
+    }
+    
+    &--mobile-menu {
+        width: 100%;
+        height: auto;
+        background-color: $background_color;
+        z-index: 10;
+    }
+}

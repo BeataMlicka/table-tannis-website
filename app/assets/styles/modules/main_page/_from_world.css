@@ -1,0 +1,53 @@
+.from-world {
+    
+    margin: 2rem 0;
+    justify-content: space-between;
+    
+    @mixin atSmall {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    @mixin atLarge {
+        flex-direction: column;
+    }
+
+    &--element {
+        margin: 0.3rem 0;
+        position: relative;
+        background-color: #101010;
+
+        @mixin atSmall {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        @mixin atLarge {
+            display: flex;
+            flex-direction: row;
+            max-height: 80px;
+        }
+    }
+    
+    &--text {
+        padding: 0.7rem 0.4rem 0.1rem 0.4rem;
+        
+        @mixin atLarge {
+            padding: 0.2rem 0.4rem 0.1rem 0.4rem;
+        }
+    }
+    
+    &--date {
+        color: $world_color;
+    }
+    
+    img {
+        
+        @mixin atLarge {
+            max-height: 80px;
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,159 @@
+.calendar {
+    
+    margin: 2rem 0; 
+    color: white;    
+    padding: 0.3rem;
+    
+    &--cell {
+        border: 1px solid $calendar_color;
+        display: flex;
+        background:       url("/app/assets/images/first_dark_background.png");
+        background-size: 100% 100%;
+        position: relative;
+    }
+    
+    &--arrow {
+        font-size: 3rem;
+        font-weight: 300;
+        color: $calendar_color;
+    }
+    
+    
+    
+    &--region {
+        margin: 0.3rem;
+        height: 50px;
+        padding: 15px 5px;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    
+    &--event {
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 1rem 0.5rem;
+        text-align: center;
+        align-self: flex-end;
+    }
+    
+/*-------------------------------------------*/
+/*    
+    
+    
+    
+    &--region {
+        margin: 0.3rem;
+        height: 50px;
+        padding: 15px 5px;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    
+    &--place {
+        display: flex;
+        flex-direction: column;
+        padding: 0.4rem 0.2rem;
+        text-align: left;
+        color: $calendar_color;
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+    
+    &--event {
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 1rem 0.5rem;
+        text-align: center;
+    }   
+    
+    &--data {
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    
+    &--arrow {
+        max-width: 70px;
+        font-size: 2.5rem;
+        font-weight: 300;
+        
+        i {
+            padding: 0.4rem 0.2rem;
+
+        }
+        
+        @mixin atSmall {
+            display: flex;
+        }
+    }*/ 
+/*-------------------------------------------*/
+/*
+    &--city {
+        color: $calendar_color;
+        font-size: 0.9rem;
+        line-height: 1.6rem;     
+    }
+    
+
+    
+    &--sm-text-wrapper {
+        padding: 0.2rem 0.5rem;
+        text-align: center;
+    }
+    
+    &--lg-text-wrapper {
+        padding: 0.2rem 0.5rem;
+        text-align: left;
+    }
+    
+    &--date {
+        color: $calendar_color;
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+    
+
+    
+    &---region {
+        font-size: 1.4rem;
+        line-height: 3rem;
+    }
+    
+  */  
+    /* -------------------------------------------- */
+    
+    &--place {
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+    }
+    
+
+    &--search-bar {
+        margin: 0;
+        padding: 0;
+    }
+    
+    &--text-field{
+        width: 65%;
+        margin-left: 5%;
+        background-color: #111111;
+        color: #999999;
+    }
+    
+    &--button {
+        width: 20%;
+        padding: 0.5rem 1.5rem;
+        background-color: $calendar_color; /*#9d4209*/
+    }
+    
+    &--button:hover{
+        background-color: $calendar_color;
+        color: black;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    
+    &--arrow {
+        margin-top: 1rem;
+    }
+    
+}

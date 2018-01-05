@@ -1,0 +1,36 @@
+.post-navigation {
+    
+    padding: 2.5rem 0;
+    height: auto;
+    font-size: 2.5rem;
+    
+    
+    &--next {
+        text-align: right;
+    }
+    
+    &--prev {
+        
+        i {
+            text-align: left;
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 500;
+    }    
+    
+    &--title {
+        display: none;
+        padding: 0.3rem 1rem;
+        color: #ffffff;
+        font-size: 1.2rem;
+
+        
+        @mixin atMedium {
+            display: block;
+        }
+    }
+}
